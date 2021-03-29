@@ -22,7 +22,7 @@ if uploaded_file is not None:
     if faces != ():
         for (x,y,w,h) in faces:
             cv2.rectangle(image,(x,y),(x+w,y+h),color=(0, 255, 0), thickness=3)
-        st.Success("Faces Detected")
+        st.success("Faces Detected")
     
         st.image(image=cv2.cvtColor(image,cv2.COLOR_RGB2BGR),width=600,use_column_width=800)
     else:
