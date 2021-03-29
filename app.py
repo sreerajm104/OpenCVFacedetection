@@ -6,11 +6,11 @@ import numpy as np
 face_classifier = cv2.CascadeClassifier("haarcascade/haarcascade_frontalface_default.xml")
 # imginput = cv2.imread("ministers.jpg")
 
-st.title("File Upload and OpenCV practice")
-st.markdown("Trying the Face Detection from uploaded images can be detected")
+st.title("File Upload and OpenCV Uses")
+st.markdown("Trying the Face Detection from uploaded image")
 
 st.sidebar.title("File Upload Testing")
-st.sidebar.markdown("Using OpenCV the user uploaded image is converted into grayscale mode testing")
+st.sidebar.markdown("Using OpenCV Face Classifier the faces are detected in the user uploaded image")
 
 uploaded_file=st.sidebar.file_uploader(label="Upload Image",type=["jpg","jpeg","png"],key="1")
 if uploaded_file is not None:
